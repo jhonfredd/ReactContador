@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React CDN</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>  
+    <div id="root"></div>
+    <!-- <script>
+        ReactDOM.render(React.createElement("h1",null,
+                React.createElement("li",null,"uva"),
+                React.createElement("li",null,"manzana"),
+                React.createElement("li",null,"pera"),
+                React.createElement("li",null,"limon"),
+        ),
+        document.getElementById("root"))
+    </script> -->
+    <!-- <script type="text/babel">
+        ReactDOM.render(
+            <div>
+                <ul>
+                    <li>Manzana</li>
+                    <li>pera</li>
+                    <li>uva</li>
+                    <li>banana</li>
+                </ul>
+            </div>
+        ,document.getElementById("root")
+        );
+    </script> -->
+    <!-- <script type="text/babel">
+        const Saludo = () => {
+            return (
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+            );
+        }
+        ReactDOM.render(<Saludo/>,document.getElementById("root")
+        );
+    </script> -->
+    <!-- <script type="text/babel">
+        const Interporal = () => {
+            //const nombre = prompt("Cual es tu nombre");
+            const [numero, setNumero] = React.useState(0);
+
+            setInterval(() => {
+              setNumero(numero+1);
+              console.log(numero);
+            },1500);
+            return (
+                <div>
+                    <h1>Hola {numero}</h1>
+                    <hr/>
+                </div>
+            )
+        };
+        
+        
+        );
+    </script> -->
+    <script  type="text/babel" src="index.js"></script>
+    <script  type="text/babel" src="./components/Contador.js"></script>
+</body>
+</html>
